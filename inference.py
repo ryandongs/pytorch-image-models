@@ -49,7 +49,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Image Classification Inference Script")
     parser.add_argument('--image_folder', type=str, required=True, help='Path to the folder containing images.')
     parser.add_argument('--num_classes', type=int, required=True, help='Number of classes in the model.')
-    parser.add_argument('--checkpoint_path', type=str, required=True, help='Path to the model checkpoint.')
+    parser.add_argument('--checkpoint_path' , metavar='DIR', required=True, help='Path to the model checkpoint.')
     parser.add_argument('--labels', type=str, required=True, help='Comma-separated list of labels for the classes.')
 
     args = parser.parse_args()
